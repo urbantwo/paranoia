@@ -1,0 +1,73 @@
+
+
+:root{
+    --grigio : rgb(14, 14, 14);
+}
+
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Sora', sans-serif;
+    scroll-
+    
+    
+}
+
+body{
+    margin: 0;
+}
+
+.container-logo{
+    position: relative;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-logo a {
+    position: absolute;
+    bottom: 0px;
+}
+
+a:visited, a:link , a:hover, a:active {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.intro {
+    /* position: absolute; */
+    background-color: var(--grigio);
+    height: 100vh;
+    /* width: 100vw; */
+    background-image: url("/content/img/pattern/135.png");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform-style: preserve-3d;
+}
+
+
+.logo-intro img{
+    width:350px;
+}
+
+
+
+.blocco{
+    height: 1200px;
+    /* width: 100vw; */
+    background-color: pink;
+}
+
+.benvenuti svg {
+    transform: translateY(0px);
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+
+.benvenuti:hover svg {
+    transform: translateY(5px);
+
+}
