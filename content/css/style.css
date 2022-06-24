@@ -8,7 +8,6 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: 'Sora', sans-serif;
-    scroll-
     
     
 }
@@ -19,7 +18,7 @@ body{
 
 .container-logo{
     position: relative;
-    height: 80%;
+    height: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,12 +34,17 @@ a:visited, a:link , a:hover, a:active {
     text-align: center;
 }
 
+.intro-container {
+        background-color: var(--grigio);
+         background-image: url("/content/img/pattern/135.png");
+}
+
 .intro {
     /* position: absolute; */
-    background-color: var(--grigio);
+    /* background-color: var(--grigio); */
     height: 100vh;
     /* width: 100vw; */
-    background-image: url("/content/img/pattern/135.png");
+    /* background-image: url("/content/img/pattern/135.png"); */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,14 +55,20 @@ a:visited, a:link , a:hover, a:active {
 
 .logo-intro img{
     width:350px;
+    max-width: 60vw;
 }
 
 
 
-.blocco{
-    height: 1200px;
+.intro-audio{
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    /* height: 1200px; */
+    padding-bottom: 300px;
     /* width: 100vw; */
-    background-color: pink;
+
 }
 
 .benvenuti svg {
@@ -69,5 +79,39 @@ a:visited, a:link , a:hover, a:active {
 
 .benvenuti:hover svg {
     transform: translateY(5px);
+
+}
+
+.audio {
+    height: 60px;
+    width: 280px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px ;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    gap:10px;
+     
+}
+.audio-container {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+
+.linguetta {
+    position: absolute;
+    bottom: 7px;
+    left: -13px;
+    
+}
+
+.cerchio {
+    width: 45px;
+    height: 45px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/President_Barack_Obama.jpg/800px-President_Barack_Obama.jpg");
+    background-size: cover;
+    border-radius: 100%;
+    box-shadow: 0px 1px 2px 0px #00000082;
 
 }
