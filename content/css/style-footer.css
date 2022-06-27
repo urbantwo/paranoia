@@ -1,0 +1,31 @@
+footer{
+    height: 350px;
+    width: 100%;
+    background-color: white;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+footer div {
+    height: 80%;
+    column-gap: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div div {
+    background-color: green;
+    
+    padding: 20px;
+
+}
+
+
+footer div div img {
+    width: 150px;
+    object-fit: contain;
+    
+}
