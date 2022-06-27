@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./content/css/style-intro.css">
     <link rel="stylesheet" href="./content/css/style-navbar.css">
+    <link rel="stylesheet" href="./content/css/style-prodotti.css">
     <script src="content/js/app.js"></script>
     <title>Paranoia Clothing</title>
 </head>
@@ -24,10 +25,10 @@
         <section class="intro">
             <div class="container-logo">
                 <div class="logo-intro">
-                    <img src="content/img/logo-bianco-paranoia.png" alt="" srcset="">
+                    <img src="content/img/paranoia_logo_bianco.png" alt="" srcset="">
                 </div>
 
-                <a class="benvenuti" href="#blocco">
+                <a class="benvenuti" href="#section-audio">
                     <div>Benvenuti</div>
 
                     <svg class="freccia" width="155" height="14" viewBox="0 0 155 14" fill="none"
@@ -42,7 +43,7 @@
         </section>
 
 
-        <section class="intro-audio" id="blocco">
+        <section class="intro-audio" id="section-audio">
 
             <div>
                 <div class="audio-container">
@@ -98,14 +99,60 @@
 
     </div>
 
-    <nav id="nav">
+    <nav id="nav" class="nav">
 
-        <div id="logo">
-            <a href="#">
-<img src="content/img/logo-nero-paranoia.png" alt="" srcset="">
-        </a>
-    </div>
+        <div class="full-width">
+
+            
+            <div id="logo">
+                <a href="#">
+                    <img src="content/img/logo-nero-paranoia.png" alt="" srcset="">
+                </a>
+            </div>
+        </div>
     </nav>
+
+    <section id="section-prodotti">
+        <div class="banner full-width ">
+            <img src="content/img/9.png" alt="" srcset="">
+
+        </div>
+
+        <div class="divisore full-width my-2"></div>
+
+        <div class="elenco-prodotti full-widht" id="griglia-prodotti">
+            <div class="prodotto">
+                <img src="content/img/icepeak-ibague-bikini.jpg" alt="">
+                <div class="divisore"></div>
+                <div class="info-prodotto">
+                
+                    <div>
+                    <div class="nome-prod">Sophia</div>
+                    <div class="prezzo-prod">49,90 €</div>
+                </div>
+
+                <svg width="20" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="16.6738" y="2" width="0.652174" height="30" fill="black" stroke="black" stroke-width="3"/>
+                    <rect x="2" y="17.3262" width="0.652174" height="30" transform="rotate(-90 2 17.3262)" fill="black" stroke="black" stroke-width="3"/>
+                    </svg>
+                    
+                </div>
+            </div>
+            
+        </div>
+
+    </section>
+
+
+    <a href="#section-prodotti">
+    <div id="sali-su" class="sali-su">
+
+            
+            <svg width="35" viewBox="0 0 84 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.75736 40.2574C-0.585786 42.6005 -0.585786 46.3995 1.75736 48.7426C4.10051 51.0858 7.89949 51.0858 10.2426 48.7426L1.75736 40.2574ZM42 8.5L46.2426 4.25736L42 0.0147186L37.7574 4.25736L42 8.5ZM73.7574 48.7426C76.1005 51.0858 79.8995 51.0858 82.2426 48.7426C84.5858 46.3995 84.5858 42.6005 82.2426 40.2574L73.7574 48.7426ZM10.2426 48.7426L46.2426 12.7426L37.7574 4.25736L1.75736 40.2574L10.2426 48.7426ZM37.7574 12.7426L73.7574 48.7426L82.2426 40.2574L46.2426 4.25736L37.7574 12.7426Z" fill="white"/>
+            </svg>
+        </div>
+    </a>
 
 </body>
 
