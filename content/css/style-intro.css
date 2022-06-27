@@ -28,7 +28,10 @@ body{
     bottom: 0px;
 }
 
-a:visited, a:link , a:hover, a:active {
+.intro-container a:visited,
+.intro-container a:link , 
+.intro-container a:hover, 
+.intro-container a:active {
     color: white;
     text-decoration: none;
     text-align: center;

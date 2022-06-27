@@ -1,5 +1,5 @@
 footer{
-    height: 350px;
+    min-height: 300px;
     width: 100%;
     background-color: white;
     margin-top: 50px;
@@ -7,21 +7,32 @@ footer{
     align-items: center;
     justify-content: center;
     flex-flow: column;
+    padding: 20px 0 0 0 ;
+    
 }
 
-footer div {
-    height: 80%;
+footer > div {
+    /* height: 80%; */
     column-gap: 20px;
     display: flex;
     justify-content: space-between;
-}
-
-footer div div {
-    background-color: green;
+    flex-flow: column;
+    margin-bottom: 20px;
     
-    padding: 20px;
-
 }
+
+footer  div  div {
+    display: flex;
+    flex-flow: column;
+    /* background-color: green; */
+    align-items: flex-start;
+    }
+
+footer > div > div {
+    
+    margin-bottom: 20px;
+}
+
 
 
 footer div div img {
@@ -29,3 +40,57 @@ footer div div img {
     object-fit: contain;
     
 }
+
+footer a:visited,
+footer a:link , 
+footer a:hover, 
+footer a:active {
+    color: var(--grigio);
+    text-decoration: none;
+    text-align: center;
+}
+
+.newsletter input[type=email] {
+    border: 0;
+    flex: 1;
+    border-color: var(--grigio);
+    border-bottom: 2px solid;
+    width: 250px;
+}
+
+.last-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start !important;
+    font-size: 0.8em;
+    font-weight: 500;
+    
+}
+
+.last-footer-link {
+    display: flex;
+    flex-flow: row;
+    column-gap: 20px;
+}
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {...}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    footer > div{
+        flex-flow: row !important;
+    }
+
+    footer > div > div {
+        margin-bottom: 0;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}

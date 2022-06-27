@@ -53,9 +53,29 @@ window.addEventListener('scroll',()=>{
     var altezzaIntro = document.getElementsByClassName('intro-container')[0].getBoundingClientRect().height
     // console.log(window.scrollY + ' | '+ document.getElementsByClassName('intro-container')[0].getBoundingClientRect().height)
 
-    if(window.scrollY < (altezzaIntro*1.25)){
+    if(window.scrollY > (altezzaIntro*1.25)){
+        if(isVisible('footer')){
+
+            puls.classList.remove('sali-visibile')
+        } else {
         puls.classList.add('sali-visibile')
-    } else{
+        }
+    } 
+    else{
         puls.classList.remove('sali-visibile')
     }
 })
+
+
+function isVisible (parametro){
+    let xx = document.getElementById(parametro).getBoundingClientRect();
+        let x = document.getElementById(parametro);
+
+        return res =
+            xx.top >= 0 &&
+            xx.left >= 0 &&
+            xx.bottom <= ((window.innerHeight || document.documentElement.clientHeight) + x.offsetHeight) &&
+            xx.right <= (window.innerWidth || document.documentElement.clientWidth);
+        
+
+}
