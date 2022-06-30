@@ -51,6 +51,11 @@
     object-fit: contain;
 }
 
+.foto-prodotto{
+    height: 20px;
+    flex-grow: 1;
+}
+
 .nome-prod{
     font-weight: 700;
 }

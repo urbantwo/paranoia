@@ -23,7 +23,11 @@ window.addEventListener('load',()=>{
         for (let index = 0; index < 15; index++) {
             elemento = elemento +   `
             <div class="prodotto">
-                    <img src="content/img/icepeak-ibague-bikini.jpg" alt="">
+            <div class="foto-prodotto">
+            <a href="./prodotto.html">
+            <img src="content/img/icepeak-ibague-bikini.jpg" alt="">
+            </a>
+            </div>
                     <div class="divisore"></div>
                     <div class="info-prodotto">
                     
@@ -33,9 +37,9 @@ window.addEventListener('load',()=>{
                     </div>
     
                     <svg width="20" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="16.6738" y="2" width="0.652174" height="30" fill="black" stroke="black" stroke-width="3"/>
-                        <rect x="2" y="17.3262" width="0.652174" height="30" transform="rotate(-90 2 17.3262)" fill="black" stroke="black" stroke-width="3"/>
-                        </svg>
+                    <rect x="16.6738" y="2" width="0.652174" height="30" fill="black" stroke="black" stroke-width="3"/>
+                    <rect x="2" y="17.3262" width="0.652174" height="30" transform="rotate(-90 2 17.3262)" fill="black" stroke="black" stroke-width="3"/>
+                    </svg>
                         
                     </div>
                 </div>
