@@ -43,12 +43,18 @@ window.addEventListener('load',()=>{
             `
             
         }
-    document.getElementById('griglia-prodotti').innerHTML = elemento
+    var griglia = document.getElementById('griglia-prodotti')
+
+    if (griglia !== null) {
+        griglia.innerHTML = elemento
+        
+    }
     
 })
 
 
 window.addEventListener('scroll',()=>{
+    if(document.getElementById('sali-su') !== null){
     var puls = document.getElementById('sali-su')
     var altezzaIntro = document.getElementsByClassName('intro-container')[0].getBoundingClientRect().height
     // console.log(window.scrollY + ' | '+ document.getElementsByClassName('intro-container')[0].getBoundingClientRect().height)
@@ -64,6 +70,7 @@ window.addEventListener('scroll',()=>{
     else{
         puls.classList.remove('sali-visibile')
     }
+}
 })
 
 
@@ -79,3 +86,23 @@ function isVisible (parametro){
         
 
 }
+
+
+function gallery () {
+
+    let galleria = document.getElementById('immagine');
+    let imgs = document.querySelectorAll(".container-thumbnail div img")
+
+    imgs.forEach(x => {
+        x.addEventListener('click',function(){
+            // console.log(this.src)
+            galleria.src = this.src
+            
+        })
+    })
+
+}
+
+// gallery()
+
+window.onload = gallery;

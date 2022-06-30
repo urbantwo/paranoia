@@ -1,0 +1,72 @@
+:root {
+    --thumb-size : 60px;
+}
+
+.parte-prodotto {
+    
+    display: flex;
+    max-width: 1140px !important;
+    width: 90% !important;
+    justify-content: space-between;
+    flex-direction: row;
+    column-gap: 20px;
+    
+}
+
+
+#section-prodotto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.container-thumbnail{
+    width: var(--thumb-size) !important;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.container-thumbnail > div  {
+    width: var(--thumb-size);
+    height: var(--thumb-size);
+    /* overflow: hidden; */
+    cursor: pointer;
+}
+
+.container-thumbnail > div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-info {
+    width: 350px;
+    height: 1000px;
+    background-color: white;
+    flex-shrink: 0;
+}
+
+.sticky {
+    top: 80px;
+    position: sticky;
+}
+
+.container-foto {
+    width: 350px;
+    height: 70%;
+    background-color: white;
+    display: flex;
+    flex-flow: row;
+    flex-grow: 1;
+    column-gap: 20px;
+    
+
+}
+
+.container-foto > * {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
