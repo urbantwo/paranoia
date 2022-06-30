@@ -1,4 +1,4 @@
-@import url(style-intro.css);
+@import url(variabili.css);
 .nav {
     margin: 0;
     box-sizing: border-box;
@@ -28,10 +28,6 @@
     opacity: 1;
 } */
 
-* {
-    transition-property: all;
-    transition-duration: 0.5s;
-}
 
 
 

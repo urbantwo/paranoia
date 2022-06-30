@@ -1,8 +1,5 @@
 
-
-:root{
-    --grigio : rgb(14, 14, 14);
-}
+@import url(variabili.css);
 
 *{
     box-sizing: border-box;

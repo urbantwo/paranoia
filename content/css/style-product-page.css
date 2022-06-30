@@ -1,6 +1,4 @@
-:root {
-    --thumb-size : 60px;
-}
+@import url(variabili.css);
 
 .parte-prodotto {
     
@@ -19,6 +17,9 @@
     display: flex;
     justify-content: center;
     margin-top: 50px;
+    flex-flow: column;
+    align-items: center;
+    row-gap: 30px;
 }
 
 .container-thumbnail{
@@ -42,10 +43,69 @@
 }
 
 .container-info {
-    width: 350px;
-    height: 1000px;
+    width: 450px;
+    /* height: 1000px; */
     background-color: white;
     flex-shrink: 0;
+    padding: 20px;
+    display: flex;
+    flex-flow: column;
+    row-gap: 30px;
+}
+.container-info * {
+    margin: 0;
+}
+
+.titolo-prodotto {
+    font-size: x-large;
+    font-weight: 700;
+}
+
+.sottotitolo-prodotto {
+    color: var(--grigio-chiaro);
+    font-size: medium;
+    font-weight: 500;
+} 
+
+.paragrafo-prodotto {
+    font-size: small;
+    text-align: justify;
+}
+
+.container-info small {
+    color: var(--grigio-chiaro);
+} 
+.taglie {
+    display: flex;
+    column-gap: 5px;
+    
+}
+.taglie label {
+    padding: 10px;
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+    box-shadow:  inset 0 0 0 0px black;
+    transition-property: box-shadow;
+    transition-duration: 0.3s;
+    
+    
+    
+}
+.taglie label div {
+}
+
+.taglie input {
+    display: none;
+}
+
+.taglie input[type="radio"]:checked + label {
+    box-shadow:  inset 0 0 0 2px rgb(59, 59, 59);
 }
 
 .sticky {
@@ -55,18 +115,100 @@
 
 .container-foto {
     width: 350px;
-    height: 70%;
-    background-color: white;
+    height: 750px;
+    max-height: 70%;
     display: flex;
     flex-flow: row;
     flex-grow: 1;
     column-gap: 20px;
-    
 
 }
 
-.container-foto > * {
+.gallery-main {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#immagine {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
+
+.acquista input[type="number"] {
+    height: 40px;
+    border-radius: 0;
+    border: 0;
+    width: 60px;
+    text-align: center;
+    box-shadow:  inset 0 0 0 0px black;
+    transition-property: box-shadow;
+    transition-duration: 0.3s;
+}
+
+.acquista input[type="number"]:focus{
+    box-shadow:  inset 0 0 0 2px rgb(59, 59, 59);
+    outline: 0;
+}
+
+.acquista input[type="number"]::-webkit-inner-spin-button,
+.acquista input[type="number"]::-webkit-outer-spin-button{
+    display: none;
+}
+.acquista {
+    display: flex;
+    column-gap: 5px;
+}
+
+.acquista input[type="submit"] {
+    height: 40px;
+    background-color: var(--grigio-scuro);
+    cursor: pointer;
+    flex-grow: 1;
+    width: 100%;
+    color: white;
+    border: 0;
+}
+
+.acquista-btn {
+    flex-grow: 1;
+}
+
+.modali label + div {
+    overflow: hidden;
+    max-height: 0px;
+    
+    transition-property: max-height;
+    transition-duration: 0.3s;
+    margin: 5px 0 5px 0;
+    border-bottom: 1px solid black;
+    
+}
+
+.modali input[type="checkbox"]:checked + label + div {
+    max-height: 100%;
+}
+
+.modali label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+}
+
+.modali input + label .freccia {
+    transform: rotate(0deg);
+    transition-property: transform;
+    transition-duration: 0.3s;
+}
+
+.modali input[type="checkbox"]:checked + label .freccia {
+    transform: rotate(180deg);
+}
+
+.spacer {
+    height: 10px;
+}
+
+

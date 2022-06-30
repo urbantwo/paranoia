@@ -1,0 +1,12 @@
+:root{
+    --thumb-size : 60px;
+    --sfondo-prodotto : rgb(255, 255, 255);
+    --grigio : rgb(14, 14, 14);
+    --grigio-chiaro : #c1c1c1;
+    --grigio-scuro : rgb(52 52 52);
+}
+
+/*  {
+    transition-property: all;
+    transition-duration: 0.5s;
+} */
