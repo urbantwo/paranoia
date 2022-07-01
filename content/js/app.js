@@ -109,4 +109,45 @@ function gallery () {
 
 // gallery()
 
-window.onload = gallery;
+// window.onload = gallery;
+
+
+
+function zoomImmagine (){
+    let immagine = document.getElementById("immagine")
+    let box = document.getElementById("immagine").getBoundingClientRect()
+    
+
+    if (immagine !== null){
+        immagine.addEventListener('mouseover',()=>{
+            immagine.style.transform = 'scale(2)'
+            // console.log( box.width )
+        })
+
+        immagine.addEventListener('mouseleave',()=>{
+            immagine.style.transform = 'scale(1.0)'
+        })
+
+        document.addEventListener('mousemove',(event)=>{
+            // console.log((box.bottom - box.top) +" | "+ box.height )
+            //immagine.style.transformOrigin = event.pageX+"px "+event.pageY+"px"
+            // console.log()
+            // document.getElementById('info').innerText = event.pageX+"px "+event.pageY+"px" 
+            var percx = (event.pageX - box.x) * 100 / box.width;
+            var percy = (event.pageY - box.y) * 100 / box.height;
+            // document.getElementById('info').innerHTML = Math.round(percx) +"% X <br/>"+
+            // Math.round(percy) +"% Y"
+
+            immagine.style.transformOrigin = percx+"% "+percy+"%"
+
+            
+        })
+
+    }
+}
+
+window.onload = () =>{
+    gallery();
+    zoomImmagine();
+
+}
